@@ -1,10 +1,19 @@
 import { useState } from "react";
 
+// ✅ Import all images instead of using relative string paths
+import relationshipsImg from "../assets/relationships.jpg";
+import careerImg from "../assets/career.jpg";
+import financialAidImg from "../assets/financial-aid.jpg";
+import healthImg from "../assets/health.jpg";
+import identityImg from "../assets/identity.jpg";
+import timeManagementImg from "../assets/time-management.jpg";
+
+// ✅ Now define the object with imported images
 const resourceData = {
   Relationships: {
     description:
       "Building and maintaining healthy relationships is crucial during your college journey. Whether you're navigating friendships, romantic connections, or roommate dynamics, our relationship resources offer guidance, counseling, and workshops to help you improve communication and emotional well-being.",
-    image: "src/assets/relationships.jpg",
+    image: relationshipsImg,
     items: [
       {
         name: "Peer Counseling",
@@ -21,7 +30,7 @@ const resourceData = {
   Career: {
     description:
       "Get ready for life after college with expert career services. From resume writing to mock interviews, career fairs, and internship prep — these services are designed to help you find and grow into the professional path that’s right for you.",
-    image: "src/assets/career.jpg",
+    image: careerImg,
     items: [
       {
         name: "Career Center",
@@ -38,7 +47,7 @@ const resourceData = {
   "Financial Aid": {
     description:
       "Managing your finances in college is easier with the right tools and support. Explore scholarships, emergency grants, financial literacy workshops, and tips on budgeting and tuition planning to make smart decisions.",
-    image: "src/assets/financial-aid.jpg",
+    image: financialAidImg,
     items: [
       {
         name: "Scholarship Finder",
@@ -55,7 +64,7 @@ const resourceData = {
   Health: {
     description:
       "Your physical and mental health are essential to your academic success. Access on-campus health services, mental health counseling, nutrition support, and more to stay well and thrive throughout your studies.",
-    image: "src/assets/health.jpg",
+    image: healthImg,
     items: [
       {
         name: "Student Health Services",
@@ -72,7 +81,7 @@ const resourceData = {
   Identity: {
     description:
       "Find support and community in spaces that celebrate your unique identity. Whether through cultural centers, affinity groups, or LGBTQIA+ support programs, you’ll discover empowering resources that help you feel seen and supported.",
-    image: "src/assets/identity.jpg",
+    image: identityImg,
     items: [
       {
         name: "Cultural Resource Center",
@@ -89,7 +98,7 @@ const resourceData = {
   "Time Management": {
     description:
       "Balancing classes, work, and social life requires strong time management. These resources offer coaching, planning tools, and strategies to help you stay organized, meet deadlines, and avoid burnout.",
-    image: "src/assets/time-management.jpg",
+    image: timeManagementImg,
     items: [
       {
         name: "Productivity Coaching",
